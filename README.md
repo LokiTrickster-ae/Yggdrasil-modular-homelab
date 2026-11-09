@@ -4,9 +4,9 @@
 
 Durante mi etapa de formación en ciberseguridad, detecté la necesidad de consolidar y profundizar en los fundamentos de **redes y sistemas** antes de seguir avanzando. Con el objetivo de demostrar experiencia práctica y un entendimiento real de la infraestructura, decidí diseñar y construir este homelab desde cero.
 
-A falta de presupuesto para adquirir servidores comerciales, opté por aprovechar una impresora 3D que tenía en casa y reutilizar componentes de hardware (placas base de equipos Lenovo V530s y una fuente de alimentación ATX de 500W). Tomando inspiración de estructuras modulares de la comunidad, adapté y rediseñé por completo los soportes y medidas mediante diseño CAD en Onshape para satisfacer mis necesidades exactas. 
+A falta de presupuesto para adquirir servidores comerciales, opté por aprovechar una impresora 3D que tenía en casa y reutilizar componentes de hardware (placas base de equipos Lenovo V530s y una fuente de alimentación ATX de 500W). Tomando inspiración de estructuras modulares de [kellerlabs/homeracker: A fully modular 3D-printable rack-building system](https://github.com/kellerlabs/homeracker), adapté y rediseñé por completo los soportes y medidas mediante diseño CAD en Onshape para satisfacer mis necesidades exactas.
 
-Este repositorio documenta todo el proceso. Al igual que el árbol mitológico que le da nombre, el núcleo de red de este homelab actúa como **Yggdrasil**: el eje central (compuesto por el switch autogestionado Zyxel y el panel de conexiones con keystones) encargado de interconectar todos los nodos y dispositivos del sistema.
+Este repositorio documenta todo el proceso. Al igual que el árbol mitológico que le da nombre, el núcleo de red de este homelab actúa como **Yggdrasil**: el eje central encargado de interconectar todos los nodos y dispositivos del sistema.
 
 ---
 
@@ -14,7 +14,7 @@ Este repositorio documenta todo el proceso. Al igual que el árbol mitológico q
 * **Chasis:** Estructura modular personalizada e impresa en 3D.
 * **Nodos de Cómputo:** 2x Placas base de ordenadores Lenovo V530s reutilizadas.
 * **Cerebro de Red / Control:** 1x Raspberry Pi 4 + 1x Raspberry Pi Pico (control térmico automatizado por sensores DS18B20 y MOSFETs)[cite: 1].
-* **Networking (Yggdrasil):** Switch autogestionado Zyxel + Panel de conexiones con Keystones[cite: 1].
+* **Networking:** Switch gestionable Zyxel + Panel de conexiones con Keystones[cite: 1].
 * **Monitorización:** Pantalla LCD integrada y control térmico por hardware.
 * **Alimentación:** Fuente de alimentación ATX de 500W adaptada al sistema[cite: 2].
 
