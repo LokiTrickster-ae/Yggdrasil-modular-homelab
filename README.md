@@ -4,7 +4,7 @@
 
 Durante mi etapa de formación en ciberseguridad, detecté la necesidad de consolidar y profundizar en los fundamentos de **redes y sistemas** antes de seguir avanzando. Con el objetivo de demostrar experiencia práctica y un entendimiento real de la infraestructura, decidí diseñar y construir este homelab desde cero.
 
-A falta de presupuesto para adquirir servidores comerciales, opté por aprovechar una impresora 3D que tenía en casa y reutilizar componentes de hardware (placas base de equipos Lenovo V530s y una fuente de alimentación ATX de 500W). Tomando inspiración de estructuras modulares de [kellerlabs/homeracker: A fully modular 3D-printable rack-building system](https://github.com/kellerlabs/homeracker), adapté y rediseñé por completo los soportes y medidas mediante diseño CAD en Onshape para satisfacer mis necesidades exactas.
+A falta de presupuesto para adquirir servidores comerciales, opté por aprovechar una impresora 3D que tenía en casa y reutilizar componentes de hardware (placas base de equipos Lenovo V530s y una fuente de alimentación ATX de 500W). Tomando inspiración de estructuras modulares de [kellerlabs/homeracker](https://github.com/kellerlabs/homeracker), adapté y rediseñé por completo los soportes y medidas mediante diseño CAD en Onshape para satisfacer mis necesidades exactas.
 
 Este repositorio documenta todo el proceso. Al igual que el árbol mitológico que le da nombre, el núcleo de red de este homelab actúa como **Yggdrasil**: el eje central encargado de interconectar todos los nodos y dispositivos del sistema.
 
