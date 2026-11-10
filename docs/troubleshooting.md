@@ -2,7 +2,7 @@
 
 <a name="issue-raspberry-pi"></a>
 
-## [Issue #01] Alojamiento interno del SSD NVMe y reorientación de la Raspberry Pi 4
+## 🟢[Issue #01] Alojamiento interno del SSD NVMe y reorientación de la Raspberry Pi 4
 
 - **Contexto del problema:** Para evitar la corrupción de datos típica de las tarjetas MicroSD debido a las escrituras constantes, se valoró inicialmente un SSD HAT, pero la compatibilidad física y la escasez de opciones adaptadas al diseño compacto complicaron la elección.
 - **Solución adoptada:** Se optó por reutilizar un disco NVMe en una carcasa externa. Dado que el almacenamiento debía quedar completamente integrado dentro del chasis, se decidió rotar físicamente la Raspberry Pi para facilitar el conexionado de los cables de manera interna.
@@ -16,7 +16,7 @@
 
 <a name="issue-chasis-inferior"></a>
 
-## [Issue #02] Diseño del chasis a medida para las placas base en la planta inferior
+## 🟢[Issue #02] Diseño del chasis a medida para las placas base en la planta inferior
 
 - **Contexto del problema:** Alojar las dos placas base de los Lenovo en la parte inferior supuso un reto de diseño importante debido a su volumen original. Se descartó conservar las carcasas de fábrica por su tamaño excesivo, optando por fabricar un chasis modular a medida.
 - **Proceso de deliberación y diseño térmico:** Tras valorar distintas opciones sobre el flujo de aire, se optó por una disposición contrapuesta con los ventiladores orientados hacia el exterior. Esta decisión motivó posteriormente el diseño de las tapas laterales con forma de embudo y rejilla para expulsar el aire caliente directamente fuera del sistema.
@@ -29,7 +29,7 @@
 
 ---
 
-## [Issue #03] Espacios tolerantes y diseño de parches modulares para el frontal superior
+## 🟢[Issue #03] Espacios tolerantes y diseño de parches modulares para el frontal superior
 
 - **Contexto del problema:** Al desconocer las dimensiones exactas de las unidades de 1U y tener dificultades para visualizar el conjunto final, se optó por imprimir la cara frontal del piso superior por partes. Esto generó un espacio intermedio inútil entre los paneles de 1U que requirió una solución sin necesidad de rehacer las piezas principales.
 - **Proceso de diseño de las rejillas:** Se diseñó un parche modular en forma de rejillas que encajaban perfectamente en el hueco sobrante. El proceso requirió varias iteraciones:
@@ -45,7 +45,7 @@
 
 <a name="issue-tapas-laterales"></a>
 
-## [Issue #04] Rediseño y reimpresión de las tapas laterales inferiores con embudos térmicos
+## 🟢[Issue #04] Rediseño y reimpresión de las tapas laterales inferiores con embudos térmicos
 
 - **Contexto del problema:** Las tapas laterales destinadas a cubrir la parte baja del chasis requerían unos embudos específicos para canalizar y expulsar directamente el flujo de aire de los disipadores de las CPU hacia el exterior.
 - **Retos y fallos de la primera versión:**
@@ -58,5 +58,14 @@
 - **Registro fotográfico:**
   - **Antes (Versión inicial con uniones defectuosas y rejilla frágil):**
     <img src="../assets/issues/rejilladeb.png" alt="Tapas laterales iniciales con fallos estructurales" width="450">
+
   - **Después (Tapas reimpresas con embudos independientes y ensamblaje mejorado):**
     <img src="../assets/issues/rejilla_desp.jpg" alt="Tapas laterales definitivas con embudos y rejillas modulares" width="450">
+
+## 🟡 [Issue #05] Planificación futura: Integración de discos duros en formato Hotswap
+
+- **Contexto de la mejora:** Uno de los objetivos a medio plazo es incorporar dos discos duros para configurar un sistema de almacenamiento en red (NAS) o un entorno de pruebas RAID dentro del chasis modular.
+- **Decisión de diseño:** Aunque montarlos de forma interna sería más sencillo, se ha descartado una instalación fija. El requisito indispensable es que sean discos **intercambiables en caliente (hotswap)** debido a mis propias preferencias.
+- **Referencia técnica seleccionada:** Para resolver el soporte mecánico 3D sin necesidad de piezas metálicas complejas o costosas, se utilizará un diseño de la comunidad que es 100% imprimible y se necesita exclusivamente un muelle:
+  - **Enlace de referencia (MakerWorld):** [Soporte para disco duro Daier (呆鹅) / Servidor / Caja NAS](https://makerworld.com/zh/models/633465#profileId-558661)
+- **Estado actual:** 🟡 **Pendiente de implementación física** (a la espera de avanzar con las siguientes fases del ensamblaje del chasis).
