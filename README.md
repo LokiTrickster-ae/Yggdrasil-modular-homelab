@@ -33,6 +33,6 @@ _(Esta imagen se irá actualizando a medida que avance el ensamblaje físico del
 
 ## 🧭 ¿Qué encontrarás en este repositorio?
 
-1. **[Arquitectura y Topología](./docs/architecture.md):** Decisiones de hardware, distribución eléctrica de la fuente (raíles de 12V y 5V) y esquema de red.
+1. **[Arquitectura y Topología](./docs/arquitectura.md):** Decisiones de hardware, distribución eléctrica de la fuente (raíles de 12V y 5V) y esquema de red.
 2. **[Diario de Troubleshooting](./docs/troubleshooting.md):** Registro detallado de problemas de montaje, retos de hardware y retos actualmente abiertos.
 3. **[Configs](./configs/):** Scripts de automatización, control térmico en MicroPython y configuraciones de red.
