@@ -10,17 +10,27 @@ Este repositorio documenta todo el proceso. Al igual que el árbol mitológico q
 
 ---
 
+## 📸 Estado Actual del Montaje
+
+_(Esta imagen se irá actualizando a medida que avance el ensamblaje físico del chasis, el cableado de la fuente y la finalización de la tapas)._
+
+<img src="./assets/assembly/status_now.jpeg" alt="Estado actual del homelab" width="500">
+
+---
+
 ## 🛠️ Arquitectura y Hardware Utilizado
-* **Chasis:** Estructura modular personalizada e impresa en 3D.
-* **Nodos de Cómputo:** 2x Placas base de ordenadores Lenovo V530s reutilizadas.
-* **Cerebro de Red / Control:** 1x Raspberry Pi 4 + 1x Raspberry Pi Pico (control térmico automatizado por sensores DS18B20 y MOSFETs)[cite: 1].
-* **Networking:** Switch gestionable Zyxel + Panel de conexiones con Keystones[cite: 1].
-* **Monitorización:** Pantalla LCD integrada y control térmico por hardware.
-* **Alimentación:** Fuente de alimentación ATX de 500W adaptada al sistema[cite: 2].
+
+- **Chasis:** Estructura modular personalizada e impresa en 3D.
+- **Nodos de Cómputo:** 2x Placas base de ordenadores Lenovo V530s reutilizadas.
+- **Cerebro de Red / Control:** 1x Raspberry Pi 4 + 1x Raspberry Pi Pico (control térmico automatizado por sensores DS18B20 y MOSFETs)[cite: 1].
+- **Networking:** Switch gestionable Zyxel + Panel de conexiones con Keystones[cite: 1].
+- **Monitorización:** Pantalla LCD integrada y control térmico por hardware.
+- **Alimentación:** Fuente de alimentación ATX de 500W adaptada al sistema[cite: 2].
 
 ---
 
 ## 🧭 ¿Qué encontrarás en este repositorio?
+
 1. **[Arquitectura y Topología](./docs/architecture.md):** Decisiones de hardware, distribución eléctrica de la fuente (raíles de 12V y 5V) y esquema de red[cite: 1, 2].
 2. **[Diario de Troubleshooting](./docs/troubleshooting.md):** Registro detallado de problemas de montaje, retos de hardware y retos actualmente abiertos.
 3. **[Configs](./configs/):** Scripts de automatización, control térmico en MicroPython y configuraciones de red.
