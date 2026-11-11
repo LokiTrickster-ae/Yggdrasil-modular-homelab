@@ -1,4 +1,4 @@
-# 📝 Diario de Ingeniería y Resolución de Incidencias
+ # 📝 Diario de Ingeniería y Resolución de Incidencias
 
 <a name="issue-raspberry-pi"></a>
 
@@ -8,10 +8,13 @@
 - **Solución adoptada:** Se optó por reutilizar un disco NVMe en una carcasa externa. Dado que el almacenamiento debía quedar completamente integrado dentro del chasis, se decidió rotar físicamente la Raspberry Pi para facilitar el conexionado de los cables de manera interna.
 - **Registro fotográfico:**
   - **Antes (Disposición inicial sin SSD interno):**
-    <img src="../assets/issues/raspi_antes.png" alt="Raspberry Pi antes de la modificación" width="450">
+    <div>
+      <img src="../assets/issues/raspi_antes.png" alt="Raspberry Pi antes de la modificación" width="450">
+    </div>  
   - **Después (Raspberry reorientada con el NVMe integrado):**
-    <img src="../assets/issues/raspi_despues.png" alt="Raspberry Pi después de girarla e integrar el NVMe" width="450">
-
+    <div>
+      <img src="../assets/issues/raspi_despues.png" alt="Raspberry Pi después de girarla e integrar el NVMe" width="450">
+    </div>
 ---
 
 <a name="issue-chasis-inferior"></a>
@@ -37,10 +40,13 @@
   - Tras descartar el cambio de filamento a mitad de impresión por complejidad, se optó por imprimir ambas piezas por separado y unirlas posteriormente.
 - **Registro fotográfico:**
   - **Antes (Espacio inútil entre paneles tras el primer montaje por partes):**
+  <div>
     <img src="../assets/issues/huecosrack.png" alt="Separación inicial entre paneles de 1U" width="450">
+  </div>  
   - **Después (Parche de rejillas hexagonales impresas por separado y ensambladas):**
+  <div>
     <img src="../assets/issues/nohuecosrack.png" alt="Rejillas modulares instaladas en el frontal superior" width="450">
-
+  </div>
 ---
 
 <a name="issue-tapas-laterales"></a>
@@ -57,10 +63,13 @@
   - Finalmente, se procedió a la reimpresión completa de las tapas con el nuevo diseño optimizado.
 - **Registro fotográfico:**
   - **Antes (Versión inicial con uniones defectuosas y rejilla frágil):**
+  <div>
     <img src="../assets/issues/rejilladeb.png" alt="Tapas laterales iniciales con fallos estructurales" width="450">
-
+  </div>
   - **Después (Tapas reimpresas con embudos independientes y ensamblaje mejorado):**
-    <img src="../assets/issues/rejilla_desp.jpg" alt="Tapas laterales definitivas con embudos y rejillas modulares" width="450">
+    <div>
+      <img src="../assets/issues/rejilla_desp.jpg" alt="Tapas laterales definitivas con embudos y rejillas modulares" width="450">
+    </div>
 
 ## 🟡 [Issue #05] Planificación futura: Integración de discos duros en formato Hotswap
 
