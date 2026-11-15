@@ -15,7 +15,7 @@ Este repositorio documenta todo el proceso. Al igual que el árbol mitológico q
 _(Esta imagen se irá actualizando a medida que avance el ensamblaje físico del chasis, el cableado de la fuente y la finalización de la tapas)._
 
 <div align="center">
-<img src="./assets/assembly/status_now.jpeg" alt="Estado actual del homelab" width="650" >
+<img src="./assets/assembly/status_15-11.jpeg" alt="Estado actual del homelab" width="650" >
 </div>
 
 ---

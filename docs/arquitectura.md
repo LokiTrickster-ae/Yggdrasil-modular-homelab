@@ -8,6 +8,8 @@ Este documento detalla la distribución de los componentes dentro de la estructu
 
 - **Exterior (Frontal de 1U):**
   - Alberga los tres paneles principales: el panel del switch, el panel de keystones y un panel compartido que integra la Raspberry Pi (ésta de carácter interno) y la pantalla LCD.
+  - **Cubierta Superior:** Incorpora el panel superior cerrado con un **ventilador de extracción de 120 mm** instalado para la evacuación del calor generado por el sistema. 
+  - *Estado actual:* Chasis parcialmente abierto/en pausa de cierre hermético. Aprovechando la temporada de invierno (donde la gestión térmica es menos crítica), se prioriza avanzar en las capas de software y control técnico antes de sellar definitivamente el recinto.
 - **Interior:**
   - Aloja la fuente de alimentación ATX.
   - _Para ver los retos de integración y el cambio de orientación de la Raspberry Pi con el SSD NVMe, consulta el [Diario de Troubleshooting](../docs/troubleshooting.md#issue-raspberry-pi)._
@@ -30,7 +32,7 @@ La fuente ATX suministra energía adaptada a las necesidades específicas de cad
 
 - **Línea de +12V:**
   - Alimentación principal para las placas base de los Lenovo ubicadas en la planta inferior (utilizando bifurcadores comerciales para duplicar los conectores de alimentación de forma segura).
-  - Suministro de 12V para los ventiladores del sistema, regulados mediante transistores MOSFET y controlados por la Raspberry Pi Pico.
+  - Suministro de 12V para los ventiladores del sistema, regulados y controlados por la **Raspberry Pi Pico**, junto con unos sensores **DS18B20**.
 - **Línea de +5V:**
   - Destinada a alimentar de forma estable la Raspberry Pi 4 y el switch de red, evitando la necesidad de adaptadores de corriente externos adicionales.
 
