@@ -78,3 +78,32 @@
 - **Referencia técnica seleccionada:** Para resolver el soporte mecánico 3D sin necesidad de piezas metálicas complejas o costosas, se utilizará un diseño de la comunidad que es 100% imprimible y se necesita exclusivamente un muelle:
   - **Enlace de referencia (MakerWorld):** [Soporte para disco duro Daier (呆鹅) / Servidor / Caja NAS](https://makerworld.com/zh/models/633465#profileId-558661)
 - **Estado actual:** 🟡 **Pendiente de implementación física** (a la espera de avanzar con las siguientes fases del ensamblaje del chasis).
+
+## 🟢[Issue #06] Cubierta para el hueco generado por la montura estándar de rack
+
+- **Contexto del problema:** Debido a que me atraía la idea de que el frontal pareciese un rack 100%, decidí imprimir la opción que da KellerLab para poder poner unidades de rack. Todo esto genera un hueco en la parte superior en la que se ve el interior y puede conllevar que entre polvo.
+
+- **Proceso de deliberación y diseño térmico:** El primer paso en este tipo de piezas, es generar un assembli con las piezas utilizadas y mapeamos la pieza a medida:
+<div style="display: flex; gap: 10px; justify-content: center;">
+  <img src="../assets/assembly/assemblyTapaArriba.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
+</div>
+
+
+- **Registro fotográfico:**
+<div style="display: flex; gap: 10px; justify-content: center;">
+  <img src="../assets/issues/huecorack_antes.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
+  <img src="../assets/issues/huecorack_des.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
+</div>
+
+## 🔴️[Issue #07] 
+
+- **Contexto del problema:** 
+
+- **Proceso de deliberación y diseño térmico:** 
+
+
+- **Registro fotográfico:**
+<div style="display: flex; gap: 10px; justify-content: center;">
+  <img src="../assets/issues/huecorack_antes.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
+  <img src="../assets/issues/huecorack_des.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
+</div>

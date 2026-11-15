@@ -34,6 +34,6 @@ La fuente ATX suministra energía adaptada a las necesidades específicas de cad
   - Alimentación principal para las placas base de los Lenovo ubicadas en la planta inferior (utilizando bifurcadores comerciales para duplicar los conectores de alimentación de forma segura).
   - Suministro de 12V para los ventiladores del sistema, regulados y controlados por la **Raspberry Pi Pico**, junto con unos sensores **DS18B20**.
 - **Línea de +5V:**
-  - Destinada a alimentar de forma estable la Raspberry Pi 4 y el switch de red, evitando la necesidad de adaptadores de corriente externos adicionales.
+  - Destinada a alimentar de forma estable la Raspberry Pi 4, Raspberry Pico y el switch de red, evitando la necesidad de adaptadores de corriente externos adicionales.
 
 ---
