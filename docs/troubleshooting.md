@@ -43,10 +43,11 @@
   <div>
     <img src="../assets/issues/huecosrack.png" alt="Separación inicial entre paneles de 1U" width="450">
   </div>  
+
   - **Después (Parche de rejillas hexagonales impresas por separado y ensambladas):**
-  <div>
-    <img src="../assets/issues/nohuecosrack.png" alt="Rejillas modulares instaladas en el frontal superior" width="450">
-  </div>
+   <div>
+     <img src="../assets/issues/nohuecosrack.png" alt="Rejillas modulares instaladas en el frontal superior" width="450">
+    </div>
 ---
 
 <a name="issue-tapas-laterales"></a>
@@ -63,9 +64,10 @@
   - Finalmente, se procedió a la reimpresión completa de las tapas con el nuevo diseño optimizado.
 - **Registro fotográfico:**
   - **Antes (Versión inicial con uniones defectuosas y rejilla frágil):**
-  <div>
-    <img src="../assets/issues/rejilladeb.png" alt="Tapas laterales iniciales con fallos estructurales" width="450">
-  </div>
+    <div>
+      <img src="../assets/issues/rejilladeb.png" alt="Tapas laterales iniciales con fallos estructurales" width="450">
+   </div>
+
   - **Después (Tapas reimpresas con embudos independientes y ensamblaje mejorado):**
     <div>
       <img src="../assets/issues/rejilla_desp.jpg" alt="Tapas laterales definitivas con embudos y rejillas modulares" width="450">
@@ -97,13 +99,12 @@
 
 ## 🔴️[Issue #07] 
 
-- **Contexto del problema:** 
+- **Contexto del problema:** El nuevo diagrama de red me ha hecho replantearme la distribución de los keystones y del switch. Quiero añadir una mejora en la tapa trasera de la fuente de alimentación para que no haya tanto cable pasando por el frontal
 
-- **Proceso de deliberación y diseño térmico:** 
+- **Proceso de deliberación y diseño térmico:** Ya que la tapa está dividida en dos aprovecharé y incluiré el hueco para un nuevo keystone. 
 
 
 - **Registro fotográfico:**
-<div style="display: flex; gap: 10px; justify-content: center;">
-  <img src="../assets/issues/huecorack_antes.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
-  <img src="../assets/issues/huecorack_des.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
+<div style="display: flex; gap: 10px;">
+  <img src="../assets/issues/keystoneback_design.png" alt="Chasis inferior y montaje de las placas Lenovo" width="300">
 </div>
