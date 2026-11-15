@@ -10,13 +10,11 @@ Este repositorio documenta todo el proceso. Al igual que el árbol mitológico q
 
 ---
 
-## 📸 Estado Actual del Montaje
+## 🧭 ¿Qué encontrarás en este repositorio?
 
-_(Esta imagen se irá actualizando a medida que avance el ensamblaje físico del chasis, el cableado de la fuente y la finalización de la tapas)._
-
-<div align="center">
-<img src="./assets/assembly/status_15-11.jpeg" alt="Estado actual del homelab" width="650" >
-</div>
+1. **[Arquitectura y Topología](./docs/arquitectura.md):** Decisiones de hardware, distribución eléctrica de la fuente (raíles de 12V y 5V) y esquema de red.
+2. **[Diario de Troubleshooting](./docs/troubleshooting.md):** Registro detallado de problemas de montaje, retos de hardware y retos actualmente abiertos.
+3. **[Configs](./configs/):** Scripts de automatización, control térmico en MicroPython y configuraciones de red.
 
 ---
 
@@ -31,8 +29,15 @@ _(Esta imagen se irá actualizando a medida que avance el ensamblaje físico del
 
 ---
 
-## 🧭 ¿Qué encontrarás en este repositorio?
+## 📸 Estado Actual del Montaje
 
-1. **[Arquitectura y Topología](./docs/arquitectura.md):** Decisiones de hardware, distribución eléctrica de la fuente (raíles de 12V y 5V) y esquema de red.
-2. **[Diario de Troubleshooting](./docs/troubleshooting.md):** Registro detallado de problemas de montaje, retos de hardware y retos actualmente abiertos.
-3. **[Configs](./configs/):** Scripts de automatización, control térmico en MicroPython y configuraciones de red.
+_(Esta imagen se irá actualizando a medida que avance el ensamblaje físico del chasis, el cableado de la fuente y la finalización de la tapas)._
+
+<div align="center">
+<img src="./assets/assembly/status_15-11.jpeg" alt="Estado actual del homelab" width="650" >
+</div>
+
+---
+
+
+
