@@ -97,7 +97,7 @@
   <img src="../assets/issues/huecorack_des.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
 </div>
 
-## 🔴️[Issue #07] 
+## 🔴️[Issue #07] Rediseño tapa trasera para añadir keystone y evitar cables en el frontal.
 
 - **Contexto del problema:** El nuevo diagrama de red me ha hecho replantearme la distribución de los keystones y del switch. Quiero añadir una mejora en la tapa trasera de la fuente de alimentación para que no haya tanto cable pasando por el frontal
 
