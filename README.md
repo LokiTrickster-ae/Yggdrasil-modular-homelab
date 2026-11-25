@@ -33,9 +33,32 @@ Este repositorio documenta todo el proceso. Al igual que el árbol mitológico q
 
 _(Esta imagen se irá actualizando a medida que avance el ensamblaje físico del chasis, el cableado de la fuente y la finalización de la tapas)._
 
-<div align="center">
-<img src="./assets/assembly/status_15-11.jpeg" alt="Estado actual del homelab" width="650" >
-</div>
+  <table>
+    <tr>
+      <td colspan="4" align="center">
+        <img src="./assets/assembly/status25-11.png" alt="Vista principal"><br>
+        <strong>📅 15/11/2026 — Cubierta del ventilador, modificación de la parte trasera para incluir un keystone </strong>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./assets/assembly/status15-11.jpg" alt="Detalle 1" width="160"><br>
+        <sub>📅 15/11/2026</sub>
+      </td>
+      <td align="center">
+        <img src="./assets/assembly/status10-11.jpg" alt="Detalle 2" width="160"><br>
+        <sub>📅 10/11/2026</sub>
+      </td>
+      <td align="center">
+        <img src="./assets/assembly/status8-09.png" alt="Detalle 3" width="160"><br>
+        <sub>📅 08/09/2026</sub>
+      </td>
+      <td align="center">
+        <img src="./assets/assembly/status16-08.png" alt="Detalle 4" width="160"><br>
+        <sub>📅 18/08/2026</sub>
+      </td>
+    </tr>
+  </table>
 
 ---
 
