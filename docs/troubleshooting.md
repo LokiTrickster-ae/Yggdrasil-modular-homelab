@@ -36,7 +36,7 @@
 
 - **Contexto del problema:** Al desconocer las dimensiones exactas de las unidades de 1U y tener dificultades para visualizar el conjunto final, se optó por imprimir la cara frontal del piso superior por partes. Esto generó un espacio intermedio inútil entre los paneles de 1U que requirió una solución sin necesidad de rehacer las piezas principales.
 - **Proceso de diseño de las rejillas:** Se diseñó un parche modular en forma de rejillas que encajaban perfectamente en el hueco sobrante. El proceso requirió varias iteraciones:
-  - El objetivo inicial era crear un conjunto de dos rejillas hexagonales superpuestas (con una rejilla interior amarilla donde la arista de los hexágonos coincidiera con el centro de los hexágonos exteriores negros).
+  - El objetivo inicial era crear un conjunto de dos rejillas hexagonales superpuestas (con una rejilla interior amarilla donde la arista de los hexágonos coincidiera con el centro de los hexágonos exteriores negros).<a name="issue-control-termico-pico"></a>
   - Tras descartar el cambio de filamento a mitad de impresión por complejidad, se optó por imprimir ambas piezas por separado y unirlas posteriormente.
 - **Registro fotográfico:**
   - **Antes (Espacio inútil entre paneles tras el primer montaje por partes):**
@@ -85,26 +85,45 @@
 
 - **Contexto del problema:** Debido a que me atraía la idea de que el frontal pareciese un rack 100%, decidí imprimir la opción que da KellerLab para poder poner unidades de rack. Todo esto genera un hueco en la parte superior en la que se ve el interior y puede conllevar que entre polvo.
 
-- **Proceso de deliberación y diseño térmico:** El primer paso en este tipo de piezas, es generar un assembli con las piezas utilizadas y mapeamos la pieza a medida:
-<div style="display: flex; gap: 10px; justify-content: center;">
-  <img src="../assets/assembly/assemblyTapaArriba.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
+- **Proceso de deliberación y diseño:** El primer paso en este tipo de piezas es generar un ensamblaje (*assembly*) con las piezas utilizadas y mapear la cubierta a medida:
+<div align="center">
+  <img src="../assets/assembly/assemblyTapaArriba.png" alt="Ensamblaje CAD de la cubierta superior para la montura rack" width="450">
 </div>
-
 
 - **Registro fotográfico:**
-<div style="display: flex; gap: 10px; justify-content: center;">
-  <img src="../assets/issues/huecorack_antes.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
-  <img src="../assets/issues/huecorack_des.png" alt="Chasis inferior y montaje de las placas Lenovo" width="450">
+<div align="center">
+  <img src="../assets/issues/huecorack_antes.png" alt="Hueco superior abierto antes de colocar la cubierta" width="450">
+  <img src="../assets/issues/huecorack_des.png" alt="Cubierta superior instalada cerrando el hueco del rack" width="450">
 </div>
 
-## 🔴️[Issue #07] Rediseño tapa trasera para añadir keystone y evitar cables en el frontal.
+---
 
-- **Contexto del problema:** El nuevo diagrama de red me ha hecho replantearme la distribución de los keystones y del switch. Quiero añadir una mejora en la tapa trasera de la fuente de alimentación para que no haya tanto cable pasando por el frontal
+## 🟢[Issue #07] Rediseño de la tapa trasera para añadir keystone y despejar el frontal
 
-- **Proceso de deliberación y diseño térmico:** Ya que la tapa está dividida en dos aprovecharé y incluiré el hueco para un nuevo keystone. 
-
-
+- **Contexto del problema:** El nuevo diagrama de red llevó a replantear la distribución de los keystones y del switch Zyxel, buscando sacar el enlace principal por la parte posterior para evitar exceso de cables cruzando por el frontal.
+- **Solución aplicada:** Aprovechando que la tapa trasera de la fuente de alimentación estaba dividida en dos piezas, se rediseñó una de las mitades en Onshape para integrar el alojamiento exacto de un módulo keystone adicional, quedando instalado y operativo.
 - **Registro fotográfico:**
-<div style="display: flex; gap: 10px;">
-  <img src="../assets/issues/keystoneback_design.png" alt="Chasis inferior y montaje de las placas Lenovo" width="300">
+<div align="center">
+  <img src="../assets/issues/keystoneback_design.png" alt="Diseño y montaje del keystone en la tapa trasera" width="350">
+  <img src="../assets/issues/keystoneback_design.png" alt="Diseño impreso e instalado" width="350">
 </div>
+
+---
+
+## 🟢[Issue #08] Ruido constante de la fuente ATX reciclada y sustitución del ventilador (*Fan Swap*)
+
+- **Contexto del problema:** Al reutilizar una fuente de alimentación ATX de 500W procedente de un equipo de sobremesa antiguo, su ventilador interno giraba de forma continua al 100 % de revoluciones por falta de control térmico integrado, generando un nivel de ruido excesivo.
+- **Proceso de diagnóstico y solución:**
+  - Se sustituyó el ventilador original de 2 pines por un modelo silencioso PWM de 4 pines, extrayendo su cable de control PWM (`Pin 4`) hacia el exterior de la fuente para gobernarlo desde la Raspberry Pi Pico (`GPIO 10`) con un suelo mínimo de seguridad del 30 %.
+
+---
+
+<a name="issue-control-termico-pico"></a>
+
+## 🟢[Issue #09] Arnés auxiliar Molex-SATA e integración del control térmico autónomo (Raspberry Pi Pico)
+
+- **Contexto del problema:** Era necesario alimentar los ventiladores de 12V y la Raspberry Pi Pico (5V) sin cortar ni intervenir en los ramales principales dedicados a las placas base Lenovo.
+- **Proceso de diseño y solución:**
+  - **Arnés desmontable:** Se modificó un adaptador comercial Molex de 4 pines a SATA retirando el conector SATA y soldando un arnés independiente con funda termorretráctil (+12V para ventiladores, +5V hacia el pin `VSYS` de la Pico y masa común `GND`).
+  - **Simplificación electrónica:** Al emplear ventiladores PWM de 4 pines (25 kHz) y alimentación compartida en cadena (*daisy-chain*) con canales PWM separados (`GPIO 10` para la fuente y `GPIO 12` para los nodos), se descartó el uso de transistores MOSFET externos.
+  - **Bus de sensores:** Se integraron 3 sondas digitales **DS18B20** en paralelo sobre el bus 1-Wire (`GPIO 19`) con una resistencia *pull-up* externa de 4.7 kΩ hacia `3V3`.
